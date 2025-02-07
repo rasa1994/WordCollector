@@ -30,7 +30,7 @@ unique_words = set()
 
 def WorkerMethod(event):
     global webPageToVisit, stackUrls, unique_words, allLinks, lock
-    while len(unique_words) < 500000 : #creating dictionary of 500000 words
+    while len(unique_words) < 500000 :
         if len(stackUrls) == 0:
             event.wait()
 
